@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <nav>
+            <div class="left">Productivity Dashboard</div>
+            <div class="right">
+                <button class="theme">
+                    change Theme
+                </button>
+            </div>
+        </nav>
+
+        <header>
+            <div class="left">
+                <div class="upper">
+                    <div class="date"></div>
+                    <div class="time">Sunday, 12:29:08 AM</div>
+                </div>
+                <div class="lower">
+                    <div class="city"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="upper">
+                    <div class="temp"></div>
+                    <div class="condition"></div>
+                </div>
+                <div class="lower">
+                    <div class="wind"></div>
+                    <div class="humidity"></div>
+                    <div class="feels-like"></div>
+
+                </div>
+
+            </div>
+        </header>
+
+        <section  class="all-elems">
+            <div class="elem" id="0">
+                <img class="img-1"
+                    src="https://images.unsplash.com/photo-1610641564155-8ea9845579dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRvZG98ZW58MHx8MHx8fDI%3D"
+                    alt="">
+                <h2>Todo List</h2>
+            </div>
+            <div class="elem" id="1">
+                <img src="https://images.unsplash.com/photo-1513544705284-99373737fab6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9tb2Rvcm98ZW58MHx8MHx8fDI%3D"
+                    alt="">
+                <h2>Pomodoro Timer</h2>
+            </div>
+            <div class="elem" id="2">
+                <img src="https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW90aXZhdGlvbnxlbnwwfHwwfHx8Mg%3D%3D"
+                    alt="">
+                <h2>Motivation</h2>
+            </div>
+            <div class="elem" id="3">
+                <img src="https://images.unsplash.com/photo-1676042349618-9f8c85d76b7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGFpbHklMjBwbGFubmVyfGVufDB8fDB8fHwy"
+                    alt="">
+                <h2>Daily Planner</h2>
+            </div>
+
+        </section>
+
+
+        <section  class="todo-full-page full-page">
+            <div class="upper">
+                <h2>Your Task list</h2>
+                <button class="close" id="0">close</button>
+            </div>
+            <div class="hero">
+                <div class="hero-left">
+                    <form id="todo-form">
+                        <input class="input-task" type="text" placeholder="Enter Task" required>
+                        <textarea class="task-detail" placeholder="Enter Details"></textarea>
+                        <div class="important">
+                            <input class="task-imp" type="checkbox" name="" id="task-imp">
+                            <label for="task-imp"> Mark as Important</label>
+                        </div>
+                        <button class="submit" type="submit">Add Task</button>
+                    </form>
+                </div>
+                <div class="hero-right">
+                    <div class="all-tasks">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pomodoro-full-page full-page">
+            <div class="upper">
+                <h2>
+                    Study With Me!
+                </h2>
+                <button class="close" id="1">close</button>
+            </div>
+            <div class="hero">
+                <div class="session">
+                    Work Session
+                </div>
+                <div id="pomo-timer" class="pomo-timer">
+
+                </div>
+                <div class="buttons">
+                    <button class="start-timer">Start</button>
+                    <button class="pause-timer">Pause</button>
+                    <button class="reset-timer">Reset</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="motivation-full-page full-page">
+            <div class="upper">
+                <h2></h2>
+                <button class="close" id="2">close</button>
+            </div>
+
+            <div class="hero">
+                <div class="quote"></div>
+                <div class="hero-duplicate">
+                    <div class="author"></div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="daily-planner-full-page full-page">
+            <div class="upper">
+                <h2>
+                    daily planner
+                </h2>
+                <button class="close" id="3">close</button>
+            </div>
+            <div class="hero">
+                <div class="all-plans">
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,681 @@
+:root {
+    --pri: #061E29;
+    --sec: #1D546D;
+    --tri: #5F9598;
+    --tri2: #53b0b5;
+    --for: #F3F4F4;
+    --red: red;
+    --green: rgb(41, 176, 24);
+    --blue: rgb(24, 100, 199);
+}
+
+@font-face {
+    font-family: aeonik;
+    src: url(/aeonik-trial/aeoniktrial-light.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: aeonik;
+    src: url(/aeonik-trial/aeoniktrial-regular.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: aeonik;
+    src: url(/aeonik-trial/aeoniktrial-bold.otf);
+    font-weight: 800;
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: aeonik;
+    font-weight: 500;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    background-color: var(--pri);
+    color: var(--for);
+    min-height: 100%;
+}
+
+main {
+    min-height: 100%;
+    width: 100%;
+    padding: 25px;
+}
+
+main nav {
+    width: 100%;
+    /* height: 40px; */
+    background-color: var(--tri);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main nav .left {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main nav .right:active {
+    /* pointer-events: none; */
+    scale: 0.95;
+
+}
+
+main nav .right button {
+    border: none;
+    padding: 10px 15px;
+    background-color: var(--sec);
+    color: var(--for);
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+main header {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+main header .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+main header .left .upper .date {
+    font-size: 27px;
+    text-transform: capitalize;
+}
+
+main header .left .upper .time {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+main header .left .lower .city {
+    font-size: 27px;
+    text-transform: capitalize;
+
+}
+
+main header .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+main header .right .upper .temp {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+main header .right .upper .temp {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+main header .right .upper .rain {
+    font-size: 24px;
+}
+
+section.all-elems {
+
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.all-elems .elem {
+    width: clamp(260px, 16vw, 430px);
+    background-color: var(--sec);
+    height: 53vh;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+
+
+}
+
+.all-elems .elem:active {
+    scale: 0.98;
+}
+
+.all-elems .elem img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: right;
+    object-position: right;
+}
+
+.all-elems .elem h2 {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 20px;
+}
+
+.all-elems .elem .img-1 {
+    -o-object-position: center;
+    object-position: center;
+}
+
+.all-elems .elem .img-5 {
+    -o-object-position: center;
+    object-position: center;
+}
+
+
+
+section.full-page {
+    width: 100%;
+    height: 100%;
+    background-color: var(--pri);
+    /* position: absolute; */
+    display: none;
+}
+
+section.full-page .upper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+section.full-page .upper button {
+    padding: 6px 11px;
+    border-radius: 8px;
+    background-color: var(--red);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    color: var(--for);
+}
+
+section.full-page .upper button:active {
+    scale: 0.95;
+}
+
+
+.todo-full-page .hero {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 0px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.todo-full-page .hero .hero-left {
+    width: 31%;
+    background-color: var(--sec);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.todo-full-page .hero .hero-right {
+    width: 65%;
+    background-color: var(--sec);
+    border-radius: 12px;
+    overflow: hidden;
+
+    /* padding: 20px; */
+}
+
+.todo-full-page .hero .hero-left form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 20px;
+
+}
+
+.todo-full-page .hero .hero-left form input.input-task {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+.todo-full-page .hero .hero-left form textarea {
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: black;
+}
+
+.todo-full-page .hero .hero-left form button {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    background-color: var(--tri);
+    border: none;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.todo-full-page .hero .hero-left form button:active {
+    scale: 0.98;
+
+}
+
+.todo-full-page .hero .hero-left form .important {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.todo-full-page .hero .hero-left form .important label {
+    white-space: nowrap;
+}
+
+.todo-full-page .hero .hero-left form .important input {
+    white-space: nowrap;
+}
+
+.todo-full-page .hero .hero-right .all-tasks {
+    width: 100%;
+    height: 100%;
+    background-color: var(--sec);
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    overflow: auto;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-full-page .hero .hero-right .all-tasks .task {
+    width: 100%;
+    padding: 12px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--tri);
+    color: var(--for);
+    border-radius: 5px;
+
+}
+
+.todo-full-page .hero .hero-right .all-tasks .task .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.todo-full-page .hero .hero-right .all-tasks .task .left span {
+    background-color: var(--red);
+    padding: 2px 5px;
+    border-radius: 18px;
+}
+
+.false {
+    display: none;
+}
+
+.todo-full-page .hero .hero-right .all-tasks .task .right button {
+    background: green;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transform: all 0.1s ease;
+    -ms-transform: all 0.1s ease;
+    transform: all 0.1s ease;
+}
+
+.todo-full-page .hero .hero-right .all-tasks .task .right button:active {
+    scale: 0.96;
+}
+
+
+.daily-planner-full-page .hero {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 0px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.daily-planner-full-page .hero .all-plans {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: auto;
+    background-color: var(--sec);
+    gap: 15px;
+    border-radius: 13px;
+}
+
+.daily-planner-full-page .hero .all-plans .plan {
+    width: 48%;
+    background-color: var(--tri);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.daily-planner-full-page .hero .all-plans .plan p {
+    position: absolute;
+    top: 6%;
+    left: 2%;
+    color: var(--pri);
+    font-size: 13px;
+    font-weight: 500;
+    /* z-index: 10; */
+    white-space: nowrap;
+}
+
+.daily-planner-full-page .hero .all-plans .plan input {
+    width: 100%;
+    color: var(--for);
+    background-color: var(--tri);
+    padding: 13px 15px;
+    padding-left: 26px;
+    padding-top: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.daily-planner-full-page .hero .all-plans .plan input::-webkit-input-placeholder {
+    color: var(--pri);
+    font-size: 25px;
+}
+
+.daily-planner-full-page .hero .all-plans .plan input::-moz-placeholder {
+    color: var(--pri);
+    font-size: 25px;
+}
+
+.daily-planner-full-page .hero .all-plans .plan input:-ms-input-placeholder {
+    color: var(--pri);
+    font-size: 25px;
+}
+
+.daily-planner-full-page .hero .all-plans .plan input::-ms-input-placeholder {
+    color: var(--pri);
+    font-size: 25px;
+}
+
+.daily-planner-full-page .hero .all-plans .plan input::placeholder {
+    color: var(--pri);
+    font-size: 25px;
+}
+
+
+
+
+.motivation-full-page .hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-height: 30%;
+    min-width: 45%;
+    text-align: center;
+    border-top: 15px solid var(--tri2);
+    border-right: 15px solid var(--tri2);
+    padding: 80px 20px;
+    border-radius: 0px 18px 0px 0px;
+
+
+    z-index: 10;
+
+}
+
+.motivation-full-page .hero-duplicate {
+
+    position: absolute;
+    width: 20%;
+    height: 15px;
+    bottom: -15px;
+    right: -14.5px;
+    border-bottom-right-radius: 18px;
+    background-color: var(--tri2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.motivation-full-page .hero-duplicate .author {
+    -webkit-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    transform: translateX(-110%);
+    color: var(--tri);
+    font-size: 23px;
+    white-space: nowrap;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+}
+
+.motivation-full-page .hero .quote {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+.pomodoro-full-page .hero {
+    margin-top: 15px;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.pomodoro-full-page .hero .session {
+    background-color: var(--blue);
+    text-align: center;
+    font-weight: 700;
+    font-size: 23px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.pomodoro-full-page .hero .pomo-timer {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+.pomodoro-full-page .hero .buttons {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 25px;
+
+}
+
+.pomodoro-full-page .hero .buttons button {
+
+    padding: 10px 30px;
+    background-color: var(--sec);
+    border: none;
+    border-radius: 5px;
+    color: var(--for);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px black;
+}
+
+.pomodoro-full-page .hero .buttons button:active {
+    scale: 0.95;
+}
