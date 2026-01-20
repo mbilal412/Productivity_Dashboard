@@ -48,7 +48,6 @@ body {
     background-color: var(--pri);
     color: var(--for);
     min-height: 100%;
-    border: 1px solid red;
 }
 
 main {
