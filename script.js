@@ -88,6 +88,9 @@ function todoList() {
         e.preventDefault()
         allTodos.push({ task: inputTask.value, detail: taskDetail.value, imp: taskImportant.checked })
         localStorage.setItem('allTodos', JSON.stringify(allTodos))
+        inputTask.value = ''
+        taskDetail.value = ''
+        taskImportant.checked = false
 
 
         renderTask()
