@@ -11,19 +11,19 @@
 
 @font-face {
     font-family: aeonik;
-    src: url(/aeonik-trial/aeoniktrial-light.otf);
+    src: url(./aeonik-trial/aeoniktrial-light.otf);
     font-weight: 200;
 }
 
 @font-face {
     font-family: aeonik;
-    src: url(/aeonik-trial/aeoniktrial-regular.otf);
+    src: url(./aeonik-trial/aeoniktrial-regular.otf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: aeonik;
-    src: url(/aeonik-trial/aeoniktrial-bold.otf);
+    src: url(./aeonik-trial/aeoniktrial-bold.otf);
     font-weight: 800;
 }
 

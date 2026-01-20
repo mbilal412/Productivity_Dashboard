@@ -289,7 +289,7 @@ navigator.geolocation.getCurrentPosition(
 
 
 async function getWeather() {
-    let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${lat},${lon}`)
+    let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${lat},${lon}`)
     data = await response.json()
     console.log(data);
     
