@@ -48,6 +48,7 @@ body {
     background-color: var(--pri);
     color: var(--for);
     min-height: 100%;
+    border: 1px solid red;
 }
 
 main {
@@ -58,7 +59,6 @@ main {
 
 main nav {
     width: 100%;
-    /* height: 40px; */
     background-color: var(--tri);
     margin-bottom: 25px;
     border-radius: 10px;
@@ -82,7 +82,6 @@ main nav .left {
 }
 
 main nav .right:active {
-    /* pointer-events: none; */
     scale: 0.95;
 
 }
